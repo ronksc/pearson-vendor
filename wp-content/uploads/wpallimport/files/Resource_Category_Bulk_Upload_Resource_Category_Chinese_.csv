@@ -1,0 +1,16 @@
+Connector,Name,Slug,Description,Parent Category Slug
+1,相機,cam_c,,
+2,無人駕駛飛機,drone_c,,
+3,富士 X-T1,fxt1_c,,apsc_c
+4,富士 X-T2,fxt2_c,,apsc_c
+5,富士 X-T3,fxt3_c,,apsc_c
+6,富士 X-H1,fxht_c,,apsc_c
+7,APSC,apsc_c,,cam_c
+8,Full Frame,fullframe_c,,cam_c
+9,尼康 D850,nd850_c,,fullframe_c
+10,尼康 D600,nd600_c,,fullframe_c
+11,尼康 D4s,nd4s_c,,fullframe_c
+12,大疆 Mavic 2 Pro,m2p_c,,drone_c
+13,大疆 Mavic 2 Zoom,m2z_c,,drone_c
+14,大疆 Spark,spark_c,,drone_c
+15,大疆 Air,air_c,,drone_c

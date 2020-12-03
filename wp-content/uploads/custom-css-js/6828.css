@@ -1,0 +1,25 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* 2020-03-10 Suggest to have this fix in the theme */ 
+
+.page-template-default .container table {
+  border-color: #505759;
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+  margin: 10px 0px;
+  width: 100%;
+}
+.page-template-default .container table td , .page-template-default .container table th {
+  padding: 5px;
+  border-color: #505759;
+  border-style: solid;
+  border-width: 1px 1px 0px 0px;
+  word-break: break-word;
+}
+@media only screen and (max-width: 767px) {
+  .page-template-default .container table td , .page-template-default .container table th {
+    font-size: 0.9em;
+  }
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

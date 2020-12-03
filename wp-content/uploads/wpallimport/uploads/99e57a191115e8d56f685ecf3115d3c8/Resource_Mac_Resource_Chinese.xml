@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1]]></connector>
+		<title><![CDATA[Macbook Air (Chinese)]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Macbook Air (Chinese)]]></displaytitle>
+		<category><![CDATA[apple_mac_c]]></category>
+		<resourcetype><![CDATA[]]></resourcetype>
+		<featureimage><![CDATA[]]></featureimage>
+		<resourcepopupimage><![CDATA[]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[]]></filetitle>
+		<filetype><![CDATA[]]></filetype>
+		<downloadablefile><![CDATA[]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

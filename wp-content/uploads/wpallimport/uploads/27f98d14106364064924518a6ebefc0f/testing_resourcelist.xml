@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<title><![CDATA[Test Object 1]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Test Object 1]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl32.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl32.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[IMAGE_1]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl32.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Test Object 2]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Test Object 2]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl31.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl31.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[IMAGE_2]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl31.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Test Object 3]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Test Object 3]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl30.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl30.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[IMAGE_3]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl30.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Test Object 4]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Test Object 4]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl28.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl28.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[IMAGE_4]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl28.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

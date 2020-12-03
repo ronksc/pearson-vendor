@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh">
+<title>基本實驗技巧</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+	<script src="js/libs/jquery/jquery-3.2.1.js"></script>
+	<script src="js/libs/jquery-ui/jquery-ui.js"></script>
+	<script src="js/libs/jquery-ui/jquery_ui_touch_punch.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/main.js"></script>
+	<script src="js/recording/RecordRTC.js"></script>
+	<script src="js/recording/adapter-latest.js"></script>
+	
+	<script src="js/experiment.js"></script>
+	<script src="js/libs/trackings/objectdetect.js"></script>
+	<!-- <script src="js/libs/trackings/x3dom.js"></script> -->
+	<script src="js/libs/trackings/smoother.js"></script>
+	<script src="js/libs/trackings/compatibility.js"></script>
+	<script src="js/libs/trackings/objectdetect.frontalface.js"></script>
+	<script src="js/libs/trackings/objectdetect.handfist.js"></script>
+	<script src="js/libs/trackings/objectdetect.handopen.js"></script>
+	<script src="js/libs/createjs-2015.11.26.min.js"></script>
+	<script src="js/libs/easeljs.js"></script>
+	
+	<script src="js/imageAssets.js"></script>
+	
+	<script src="js/mode1.js"></script>
+	<script src="js/mode2.js"></script>
+	<script src="js/mode3.js"></script>
+</head>
+
+<body>
+	<div style="width:100%;height:100%;background:grey;display:block" id="preloaderContainer" class="overlay">
+		<div id="loader"></div>
+		<div id="percentageVal">載入中 0%</div>
+	</div>
+	<div style="display:none;" id="parentContainer">
+		
+		<div id="header">
+			<div id="logo"></div>
+			<div id="courseTitle"><h3>單元一      基本實驗技巧</h3></div>
+		</div>
+		
+		<canvas id='videoCanvas' style="position: absolute;"></canvas>
+		
+		<video id='streamVideo' style="position: absolute;" width="640" height="480"></video>
+		<canvas id="overlayCanvas" style="position: absolute;" width="640" height="480"></canvas>
+		<div style="position:absolute;top:120px;left:300px;display:none1;" id="traceDiv"></div>
+		
+		<div id="collider_1" class="collideClass" style="display: none">Collider_1</div>
+		<div id="collider_2" class="collideClass" style="display: none">Collider_2</div>
+		<div id="collider_3" class="collideClass" style="display: none">Collider_3</div>
+		<div id="currDivs" class="collideClass" style="display: none">Collider_3</div>
+		
+		
+		
+		<p class="mode_instruction">Transfer <span class="randomValue">40</span> cm<sup>3</sup> of solution to the beaker.</p>
+
+		<div id="mode1" class="similuation_one" style="display:none;">
+        	<!-- <h3>Transfer <span class="randomValue">40</span> cm<sup>3</sup> of solution to the beaker.</h3>
+			<div style="z-index:1" id="bottle" class="sm1_bottle layer1"></div>
+			<div style="z-index:2;border:0px solid red;" class="sm1_bottle layer2">
+				<canvas id="bottleCanvas" width="200" height="350"></canvas>
+			</div>
+			
+            <div style="z-index:1" id="beaker" class="sm1_beaker layer1"></div>
+			
+			<div  style="z-index:2;border:0px solid red;" class="sm1_beaker layer2">
+				<canvas id="beakerCanvas" width="187" height="270"></canvas>
+			</div>
+			
+            <div style="border:0px solid red;" id="filler" class="sm1_dropper">
+				<canvas id="fillerCanvas" width="65" height="262"></canvas>
+			</div> -->
+        </div>
+        
+        <div id="mode2" class="similuation_one similuation_two" style="display:none;" >
+        	
+			<!-- <div style="z-index:1;" class="sm2_bottle1 layer1"></div>
+			
+			<div style="z-index:1;" data-target="bottle1" id="filler1" class="sm2_filler1">
+				<canvas id="filler1Canvas" width="70" height="205"></canvas>
+			</div>
+			
+			<div style="z-index:2;" id="bottle1" class="sm2_bottle1 layer2">
+				<canvas id="bottle1Canvas" width="105" height="170"></canvas>
+			</div>
+			
+			
+			
+            <div style="z-index:1;" class="sm2_bottle2 layer1"></div>
+			
+			<div style="z-index:1" data-target="bottle2" id="filler2" class="sm2_filler2">
+				<canvas id="filler2Canvas" width="70" height="205"></canvas>			
+			</div>
+			
+			<div style="z-index:2;" id="bottle2" class="sm2_bottle2 layer2">
+				<canvas id="bottle2Canvas" width="105" height="170"></canvas>
+			</div>
+						
+			
+            <div style="z-index:1;" class="sm2_tube layer1"></div>
+			
+			<div style="z-index:2;" id="testTube" class="sm2_tube layer2">
+				<canvas id="tubeCanvas" width="250" height="375"></canvas>
+			</div>
+			
+            <div style="z-index:1;" class="sm2_bottle3 layer1"></div>
+			
+			<div style="z-index:1;" data-target="bottle3" id="filler3" class="sm2_filler3">
+				<canvas id="filler3Canvas" width="70" height="205"></canvas>			
+			</div>
+			
+			<div style="z-index:2;" id="bottle3" class="sm2_bottle3 layer2">
+				<canvas id="bottle3Canvas" width="105" height="170"></canvas>
+			</div>
+						
+			
+            <div style="z-index:1;" class="sm2_bottle4 layer1"></div> 
+			
+			<div style="z-index:1" data-target="bottle4" id="filler4" class="sm2_filler4">
+				<canvas id="filler4Canvas" width="70" height="205"></canvas>			
+			</div>
+			
+			<div style="z-index:2;" id="bottle4" class="sm2_bottle4 layer2">
+				<canvas id="bottle4Canvas" width="105" height="170"></canvas>
+			</div>  -->
+			
+        </div>
+		
+		<div id="mode3" class="similuation_one similuation_three" style="display:none;" >
+			<!-- <div id="m3Beaker" class="sm3_beaker">
+				<canvas id="beakerCanvas" width="150" height="250"></canvas>
+			</div>	
+			<div id="bunsenBurner" class="sm3_bunsen_burner">
+				<canvas class="flame_canvas" id="flameCanvas" width="35" height="75"></canvas>
+				<div id="airHoleBtn" class="sm3_air_hole"></div>
+				<div id="gasHoleBtn" class="sm3_gas_hole"></div>
+			</div>
+			<div id="tableStand" class="sm3_stand">
+				<div id="tableDropArea" class="table_drop_area"></div>
+			</div>	
+			<div id="lighter" class="sm3_lighter"></div> -->
+		</div>
+        		
+		<div id="buttonsContainer">
+			<div id="drag_rotate" class="dragNow comControls">Rotate</div>
+			<!-- <div id="turnOffCam" class="comControls"></div> -->
+			<div id="recStop" class="comControls"></div>
+			<div id="togCam" class="comControls"></div>
+			<!-- <div id="turnOnCam" class="comControls">Turn-On Camera</div> -->
+			<div id="cameraBtn" class="comControls cameraOn"></div>
+			<div id="changeLevelBtn" class="comControls">Transfer</div>
+			<div id="infoBtn" class="comControls"></div>
+			<div id="resetBtn" class="comControls"></div>
+		</div>
+		
+		<!-- <div id="bottomContainer">
+			<div id="infoBtn" class="comControls"></div>
+			<div id="zoomInBtn" class="comControls"></div>
+			<div id="zoomOutBtn" class="comControls"></div>
+			<div id="rotateBtn" class="comControls"></div>
+		</div> -->
+
+		
+		<div style="position:absolute;top:140px;left:300px;border:1px solid red;display:none;color:#000;" id="mousePosDiv">0</div>
+		
+		<div style="display:none;" class="modal" id="myModal" role="dialog">
+			<div class="modal-dialog" id="mod-dialogs">
+			  <div class="modal-content" id="modContent">
+				<div class="modal-body">
+				  <p class="success_message">移取完成</p>
+				  <button id="successButton" class="success_button">下一步</button>
+				</div>
+			  </div>
+			  
+			</div>
+		</div>	
+		
+		<div style="display:none;" id="hardwareInfo">
+			<div id="centerBox">
+				<div id="headerArea">注意</div>
+				
+				<div id="line_2">為達至最佳體驗，建議使用以下系統配置：</div>
+				<table id="table" class="table table-condensed table-bordered">
+					<tbody>
+					  <tr>
+						<td>瀏覽器</td>
+						<td id="browserVersion">Edge 16+, Mozilla Firefox 59+, Chrome 67+, Safari 11.2+</td>
+					  </tr>
+					  <tr>
+						<td>操作系統</td>
+						<td id="osVersion">Windows 7, 8, 10; Mac 10.13; iPad Air 2 with iOS 11; Android 5.0.2</td>
+					  </tr>
+						<tr>
+						<td>RAM</td>
+						<td>4 GB+</td>
+					  </tr>
+					  <tr>
+						<td>頻寬</td>
+						<td>2 MBPS+</td>
+					  </tr>
+					  <tr>
+						<td>AR 模式</td>
+						<td>電腦需配備攝錄鏡頭</td>
+					  </tr>
+					</tbody>
+				  </table>	
+					<div id="launcher">下一步</div>
+			</div>
+		</div>
+		<div style="display:none;" id="infoBanner">		
+			<div id="info-content">
+				<div id="info-header">指示</div>
+				<div id="instruct-close">下一步</div>
+				<div id="info-text">Instruction will be updated
+					
+				</div>
+				<div id="demoVid" >Link</div>
+				<video id="videoPopUp" src="video/demo.mp4" controls></video>
+				<!-- <div id="video-close">X</div> -->
+			</div>
+		</div>
+		<div id="videoSetUp">
+			
+		</div>
+		
+	</div>
+</body>
+
+</html>

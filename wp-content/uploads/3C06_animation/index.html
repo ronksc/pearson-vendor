@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>失物認領站</title>
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="container" id="container">
+<div id="imgContainer" class="preload_container">
+        <span id="percentageVal"> </span>
+</div>
+<div class="content_part" id="bgContainer"><!-- dragdrop_1, dragdrop_2-->
+    <video id="video" class="my-video" style="display:none"></video>
+    <video id="feedbackVideo" class="my-video" style="display:none"></video>
+	<div class="drag_drop_1 dragPart" id="drag_interactivity_1" style="display:none">
+		<h1 class="screenIntro">找出物主 ，並把物件移到適當的框中。</h1>
+		<img class="drag drag_1" data-answer="true" data-dropid="drop2" src="assets/images/13_activity_1_02.png"/>
+		<img class="drag drag_2" data-answer="true" data-dropid="drop1" src="assets/images/13_activity_1_03.png"/>
+		<img class="drag drag_3" data-answer="true" data-dropid="drop3" src="assets/images/13_activity_1_04.png"/>
+		<div class="drop drop_1" id="drop1"></div>	
+		<div class="drop drop_2" id="drop2"></div>	
+		<div class="drop drop_3" id="drop3"></div>	
+	</div>
+	
+	<div class="drag_drop_2 dragPart"  id="drag_interactivity_2" style="display:none">
+		<h1 class="screenIntro">把最適合的名稱移到框中。</h1>
+		<p class="drag drag_1" data-answer="true">等邊三角形</p>
+		<p class="drag drag_2" data-answer="true" data-dropid="drop2_2">直角等腰三角形</p>
+		<p class="drag drag_3" data-answer="true" data-dropid="drop1_1">直角三角形</p>
+		<div class="drop drop_1" id="drop1_1"></div>	
+		<div class="drop drop_2" id="drop2_2"></div>			
+	</div>
+
+
+</div>
+<div class="control_part">
+	<div class="control_left">
+    	<div class="paus_btn hover_part"><img class="hover_img" src="assets/images/pauseBtn_over_tip.png" alt=""></div>
+        <div class="play_btn hover_part" style="display:none;"><img class="hover_img" src="assets/images/playBtn_over_tip.png" alt=""></div>
+        <div class="previous_btn hover_part"><img class="hover_img" src="assets/images/backwardBtn_over_tip.png" alt=""></div>
+        <div class="next_btn hover_part"><img class="hover_img" src="assets/images/forwardBtn_over_tip.png" alt=""></div>
+    </div>
+    <div class="control_right">
+    	<!-- <div class="exit_btn"></div> -->
+    </div>
+</div>
+</div>
+
+</body>
+<script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery_ui.js"></script>
+    <script src="js/lib/jquery.ui.touch_punch.js"></script>
+    <script src="js/lib/checkbrowser.js"></script>
+    <script src="js/lib/fitToScreen.js"></script>
+  
+    <script src="js/lib/soundjs_next.combined.js"></script>
+    <script src="js/preload/ImageList.js"></script>
+    <script src="js/controller/launchScreen.js"></script>
+    <script src="js/screen1.js"></script>
+    <script src="js/controller/config.js"></script>
+</body>
+<script>
+    var audioPlayer = audioPlayer1 = createjs.Sound; 
+       
+       var controller = new screenLaunch(configAll());
+   
+       $(document).ready(function(){
+           controller.preloadImages(function(){
+               controller.startInit(); 
+                          
+           });               
+       }); 
+   
+</script>
+
+</html>

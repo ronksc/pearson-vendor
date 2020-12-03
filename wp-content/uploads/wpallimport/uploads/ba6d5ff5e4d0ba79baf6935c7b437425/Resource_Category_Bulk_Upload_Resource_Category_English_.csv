@@ -1,0 +1,16 @@
+Connector,Name,Slug,Description,Parent Category Slug
+1,Camera,cam_e,,
+2,Drone,drone_e,,
+3,Fujifilm X-T1,fxt1_e,,apsc_e
+4,Fujifilm X-T2,fxt2_e,,apsc_e
+5,Fujifilm X-T3,fxt3_e,,apsc_e
+6,Fujifilm X-H1,fxht_e,,apsc_e
+7,APSC,apsc_e,,cam_e
+8,Full Frame,fullframe_e,,cam_e
+9,Nikon D850,nd850_e,,fullframe_e
+10,Nikon D600,nd600_e,,fullframe_e
+11,Nikon D4s,nd4s_e,,fullframe_e
+12,DJI Mavic 2 Pro,m2p_e,,drone_e
+13,DJI Mavic 2 Zoom,m2z_e,,drone_e
+14,DJI Spark,spark_e,,drone_e
+15,DJI Air,air_e,,drone_e

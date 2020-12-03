@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1000]]></connector>
+		<title><![CDATA[Hura]]></title>
+		<content><![CDATA[This is for testing]]></content>
+		<displaytitle><![CDATA[Hura]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/08/上載相片.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/08/上載相片.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[0]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

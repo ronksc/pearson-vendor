@@ -1,0 +1,17 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.navbar-default .navbar-nav li.nav-teacher > a {
+    color: #ea7600;
+}
+.navbar-default .navbar-nav li.nav-longmanplus > a {
+    color: #008638;
+}
+@media only screen and (max-width: 991px) {
+  .navbar-default .navbar-nav .open .dropdown-menu li.nav-teacher a{
+    color: #ea7600;
+	}
+  .navbar-default .navbar-nav .open .dropdown-menu li.nav-longmanplus a{
+    color: #008638;
+	}
+}</style>
+<!-- end Simple Custom CSS and JS -->

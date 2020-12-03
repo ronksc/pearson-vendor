@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1]]></connector>
+		<title><![CDATA[¥t¤@¿ï¾Ü]]></title>
+		<content><![CDATA[´ú¸Õ±M¥Î]]></content>
+		<displaytitle><![CDATA[«n·¥]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Penguins.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Penguins.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Penguins.jpg]]></resourcepopupurl>
+		<filetitle><![CDATA[¥øÃZ]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Penguins.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<connector><![CDATA[2]]></connector>
+		<title><![CDATA[¥t¤G¿ï¾Ü]]></title>
+		<content><![CDATA[´ú¸Õ±M¥Î]]></content>
+		<displaytitle><![CDATA[¿D¬w]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Koala.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Koala.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Koala.jpg]]></resourcepopupurl>
+		<filetitle><![CDATA[¾ðºµ]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/07/Koala.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<title><![CDATA[Test Object 21]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Test Object 21]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_aw13.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_aw13.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[IMAGE_21]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_aw13.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Test Object 22]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Test Object 22]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_aw12.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_aw12.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[IMAGE_22]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_aw12.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

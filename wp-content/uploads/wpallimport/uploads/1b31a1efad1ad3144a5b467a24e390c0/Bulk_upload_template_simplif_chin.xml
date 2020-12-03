@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1]]></connector>
+		<title><![CDATA[简体中文]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[简体中文]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[audio-file]]></resourcetype>
+		<featureimage><![CDATA[]]></featureimage>
+		<resourcepopupimage><![CDATA[]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[]]></filetitle>
+		<filetype><![CDATA[wav]]></filetype>
+		<downloadablefile><![CDATA[http://chinaweb.pprod4.ilongman.com/wp-content/uploads/Edge_CB_1A_U1_T3.mp3]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[1]]></audiopreview>
+		<previewonly><![CDATA[1]]></previewonly>
+		<maindownload><![CDATA[0]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<connector><![CDATA[2]]></connector>
+		<title><![CDATA[简体]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[简体]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[audio-file]]></resourcetype>
+		<featureimage><![CDATA[]]></featureimage>
+		<resourcepopupimage><![CDATA[]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[]]></filetitle>
+		<filetype><![CDATA[wav]]></filetype>
+		<downloadablefile><![CDATA[http://chinaweb.pprod4.ilongman.com/wp-content/uploads/Edge_CB_1A_U1_T4.mp3]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[1]]></audiopreview>
+		<previewonly><![CDATA[1]]></previewonly>
+		<maindownload><![CDATA[0]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

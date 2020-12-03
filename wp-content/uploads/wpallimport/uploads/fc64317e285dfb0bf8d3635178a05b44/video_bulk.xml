@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<title><![CDATA[New video 1]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[New video 1]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[video-file]]></resourcetype>
+		<featureimage><![CDATA[]]></featureimage>
+		<resourcepopupimage><![CDATA[]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[https://www.youtube.com/watch?v=Ia9rQ5O01TM]]></resourcepopupurl>
+		<filetitle><![CDATA[utube video]]></filetitle>
+		<filetype><![CDATA[video]]></filetype>
+		<downloadablefile><![CDATA[]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

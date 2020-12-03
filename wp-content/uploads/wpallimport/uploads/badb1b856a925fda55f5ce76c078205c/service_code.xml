@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<servicecode><![CDATA[a]]></servicecode>
+	</node>
+	<node>
+		<servicecode><![CDATA[b]]></servicecode>
+	</node>
+	<node>
+		<servicecode><![CDATA[c]]></servicecode>
+	</node>
+	<node>
+		<servicecode><![CDATA[d]]></servicecode>
+	</node>
+</data>

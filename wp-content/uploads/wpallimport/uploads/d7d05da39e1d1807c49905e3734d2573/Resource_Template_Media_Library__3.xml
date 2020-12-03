@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<title><![CDATA[Y Test Object 1]]></title>
+		<content><![CDATA[testing]]></content>
+		<displaytitle><![CDATA[Z Test Object 1]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/e7a61927a05e430f7fdd6bb41d3c03b2.png]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/e7a61927a05e430f7fdd6bb41d3c03b2.png]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[Z_IMAGE_1]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/e7a61927a05e430f7fdd6bb41d3c03b2.png]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Y Test Object 2]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Z Test Object 2]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl22.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl22.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[Z_IMAGE_2]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl22.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Y Test Object 3]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Z Test Object 3]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl33.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl33.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[Z_IMAGE_3]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl33.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<title><![CDATA[Y Test Object 4]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Z Test Object 4]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl32.jpg]]></featureimage>
+		<resourcepopupimage><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl32.jpg]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[]]></resourcepopupurl>
+		<filetitle><![CDATA[Z_IMAGE_4]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/01/nck_self_bl32.jpg]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[0]]></audiopreview>
+		<previewonly><![CDATA[0]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

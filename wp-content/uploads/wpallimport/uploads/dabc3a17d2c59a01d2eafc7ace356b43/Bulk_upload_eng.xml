@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1]]></connector>
+		<title><![CDATA[Penguin]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Penguin]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></featureimage>
+		<resourcepopupimage><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></resourcepopupurl>
+		<filetitle><![CDATA[Penguin]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+	<node>
+		<connector><![CDATA[2]]></connector>
+		<title><![CDATA[Edge_CB_1A_U1_T4]]></title>
+		<content><![CDATA[]]></content>
+		<displaytitle><![CDATA[Koala]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[image-file]]></resourcetype>
+		<featureimage><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></featureimage>
+		<resourcepopupimage><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></resourcepopupurl>
+		<filetitle><![CDATA[Koala]]></filetitle>
+		<filetype><![CDATA[image]]></filetype>
+		<downloadablefile><![CDATA[https://digitalres.pprod4.ilongman.com/wp-content/uploads/Ebook2.png]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[1]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

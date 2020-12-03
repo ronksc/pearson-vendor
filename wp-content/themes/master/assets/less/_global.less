@@ -1,0 +1,255 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #505759;
+}
+
+a{
+	text-underline-position: under;
+}
+
+.main{
+	float:none!important;
+	padding-left:0!important;
+	padding-right:0!important;
+	padding-top:61px;
+}
+
+.clearfix{
+	zoom: 1; // For IE 6/7 (trigger hasLayout)   
+	&:before, &:after {     
+		content: "";     
+		display: table;   
+	}   
+	&:after {     
+		clear:both;   
+	} 
+}
+
+.no-padding, .noPadding{
+	padding:0!important;
+}
+
+/*.breadcrumb{
+	background:#fff;
+	padding:0;
+	border-radius:0;
+	margin-top:5px;
+	
+	& > li + li:before{
+		content:"\003e";
+	}
+	
+	a{
+		color:#505759;
+	}
+}*/
+
+.breadcrumbs{
+	margin-top:5px;
+	margin-bottom:20px;
+	color: #cccccc;
+	
+	& > span{
+		padding:0 5px;
+		&:first-child{
+			padding-left:0;
+		}
+		
+		&:last-child{
+			padding-right:0;
+		}
+	}
+	
+	span{
+		color:#505759;
+		
+		a{
+			color:#505759;
+			
+			&:hover{
+				text-decoration:none;
+				color:#27ae60;
+			}
+		}
+	}
+}
+
+.img-responsive{
+	max-width:auto;
+	width:100%;
+}
+
+a{
+	outline:none!important;
+	
+	&.btn_single_download{
+		padding:5px 13px 5px 35px;
+		color:#fff;
+		background:url(../img/common/bg_gradient_download.png) repeat-x;
+		background-size: contain;
+		border-radius:2px;
+		display:inline-block;
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+		position:relative;
+		
+		&:before{
+			content:"";
+			width:24px;
+			height:24px;
+			background:url(../img/common/ic-file-download-white@2x.png) no-repeat center;
+			background-size:24px auto;
+			padding-right:5px;
+			display:inline-block;
+			position:absolute;
+			top:5px;
+			left:5px;
+		}
+	}
+	
+	&.media-file{
+		display:inline-block;
+		font-size: 12px;
+		line-height: 1.33;
+		color: #505759;
+		width:92px;
+		height:70px;
+		background-repeat: no-repeat;
+		background-position: top center;
+		text-align: center;
+		padding-top: 40px;
+		margin-right:4px;
+		float:left;
+		overflow:hidden;
+		
+		&.all{ background-image:url(../img/common/download-all.svg); }
+		&.doc{ background-image:url(../img/common/doc.svg); }
+		&.ppt{ background-image:url(../img/common/ppt.svg); }
+		&.wav{ background-image:url(../img/common/wav.svg); }
+		&.zip{ background-image:url(../img/common/zip.svg); }
+		&.pdf{ background-image:url(../img/common/pdf.svg); }
+		&.mpg{ background-image:url(../img/common/mpg.svg); }
+		&.jpg{ background-image:url(../img/common/jpg.svg); }
+		&.html{ background-image:url(../img/common/html.svg); }
+	}
+}
+
+select{
+	color:#000;
+	-webkit-appearance: none;
+	background:url(../img/common/pull-down-arrow.svg) no-repeat right center;
+	background-size:contain;
+	border-radius: 2px;
+	padding-right:40px!important;
+	border-color:#CCCCCC;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.container-fluid{
+	max-width: 1280px;
+}
+
+.fancybox-content{
+	&.file-download{
+		max-width:360px!important;
+	}
+	
+	&.article-lightbox{
+		max-width:360px!important;
+		
+		.media-container{
+			margin-bottom:30px;
+		
+			a{
+				float: none;
+				height: 30px;
+				padding: 0;
+				text-align: right;
+				padding-left: 32px;
+				width: 66px;
+				background-position: left;
+				vertical-align: middle;
+				line-height: 2.5;
+			}
+		}
+		
+		.img-container{
+			margin-bottom:25px;
+		}
+		
+		.content-container{
+			font-size: 16px;
+			color: #505759;
+		}
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// tablet
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-sm-min) {
+	.main{padding-top:68px;}
+	.fancybox-content{
+		&.file-download{
+			max-width:480px!important;
+		}
+		
+		&.article-lightbox{
+			max-width:700px!important;
+		
+			.media-container{
+				text-align:right;
+				
+			}
+			
+			.img-container{
+				float:right;
+				margin:0 0 15px 25px;
+				img{
+					max-width:360px;
+					height:auto;
+				}
+			}
+		}
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// Desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-md-min) {
+	.main{padding-top:0;}
+	.fancybox-content{
+		&.file-download{
+			max-width:640px!important;
+		}
+		
+		&.article-lightbox{
+			max-width:800px!important;
+		}
+	}
+}
+
+//===============================================================================
+//===============================================================================
+// Wide desktop
+//===============================================================================
+//===============================================================================
+@media (min-width: @screen-lg-min) {
+	
+}
+
+//adding new break point for container max-width: 1280
+@media (min-width: 1500px) {
+	.fancybox-content{
+		&.file-download{
+			max-width:800px!important;
+		}
+	}
+}

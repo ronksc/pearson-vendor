@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1000]]></connector>
+		<title><![CDATA[Second video]]></title>
+		<content><![CDATA[This is for testing]]></content>
+		<displaytitle><![CDATA[Second video]]></displaytitle>
+		<category><![CDATA[]]></category>
+		<resourcetype><![CDATA[video-file]]></resourcetype>
+		<featureimage><![CDATA[]]></featureimage>
+		<resourcepopupimage><![CDATA[https://www.youtube.com/watch?v=4ZL1lQE-k_k]]></resourcepopupimage>
+		<resourcepopupurl><![CDATA[https://www.youtube.com/watch?v=4ZL1lQE-k_k]]></resourcepopupurl>
+		<filetitle><![CDATA[For download]]></filetitle>
+		<filetype><![CDATA[video]]></filetype>
+		<downloadablefile><![CDATA[http://ptcheckweb.pprod4.ilongman.com/wp-content/uploads/2019/11/SECOND-TIME-Watercolor-Illustration.mp4]]></downloadablefile>
+		<externallink><![CDATA[]]></externallink>
+		<audiopreview><![CDATA[]]></audiopreview>
+		<previewonly><![CDATA[]]></previewonly>
+		<maindownload><![CDATA[0]]></maindownload>
+		<note><![CDATA[]]></note>
+	</node>
+</data>

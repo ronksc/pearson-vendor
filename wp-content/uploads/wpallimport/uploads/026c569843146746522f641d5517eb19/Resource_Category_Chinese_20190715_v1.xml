@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1]]></connector>
+		<name><![CDATA[安卓]]></name>
+		<slug><![CDATA[android_c]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[]]></parentcategoryslug>
+	</node>
+</data>

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<title>如何讀取讀數</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="css/main.css"/>
+	<link href="css/style.css" rel="stylesheet"></link>
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		
+	<script src="js/libs/jquery/jquery-3.2.1.js"></script>
+	<script src="js/libs/jquery-ui/jquery-ui.js"></script>
+	<script src="js/libs/jquery-ui/jquery_ui_touch_punch.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	
+	<script src="js/libs/threejs/three.js"></script>
+	<script src="js/libs/threejs/controls/OrbitControls.js"></script>
+	<script src="js/libs/threejs/libs/inflate.min.js"></script>
+	<script src="js/libs/threejs/curves/NURBSCurve.js"></script>
+	<script src="js/libs/threejs/curves/NURBSUtils.js"></script>
+	<script src="js/libs/threejs/loaders/FBXLoader.js"></script>
+	<script src="js/libs/threejs/Detector.js"></script>
+	<script src="js/libs/threejs/libs/stats.min.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script src="js/3dModelLoader.js"></script>
+	<script src="js/libs/compatibility.js"></script>
+	<script src="js/libs/smoother.js"></script>
+	<!-- <script src="js/libs/objectdetect.js"></script>
+	<script src="js/libs/objectdetect.frontalface.js"></script> -->
+	
+	 <script src="js/tracking/tracking.js"></script>
+	<script src="js/tracking/face-min.js"></script>
+	<script src="js/tracking/Landmarks.js"></script>
+	<script src="js/tracking/Regressor.js"></script>
+	
+	<script src="js/recording/RecordRTC.js"></script>
+	<script src="js/recording/adapter-latest.js"></script>
+	
+</head>
+
+<body>
+	<div style="position:absolute;top:120px;left:300px;padding:5px;background:#fff;display:none;z-index:1" id="traceDiv">Test</div>
+	<div id="wholeContainer">
+	<div style="width:100%;height:100%;background:grey;display:block;z-index: 110;" id="preloaderContainer" class="overlay">
+		<div id="loader"></div>
+		<div id="percentageVal">Loading Models 0 of 1</div>
+	</div>
+	
+	<video  id="video"  autoplay></video>
+	
+	<video  id="video2"  autoplay></video>
+	<!-- <video  id="video3"  autoplay></video> -->
+
+	<canvas style="opacity:1;"  id="canvasDetection"></canvas> 
+	<div id="trackValue" style="display:none;"></div>
+	<div id="threeDArea"></div>
+	<div id="faceBox"></div>
+	<div id="header">
+		<div id="logo"></div>
+		<div id="courseTitle"><h3>單元一      如何讀取讀數</h3></div>
+	</div>
+	
+	<div id="3dArea" style="position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;z-index:100">
+		<div id="volOfWater"></div>
+		<div id="eyeContainment"></div>
+		<canvas id="lineDraws"></canvas>
+		<div id="3dContainer"></div>
+	
+		<div id="waterLevelSlider">
+			<div id="levelFiller"></div>
+			<p id="lab_1">水的體積</p>
+		</div>
+		
+		<div id="calcContainer">
+			<p id="lab_2">水的體積 = </p>
+			<input id="waterLev" type="number"  inputmode="numeric" pattern="[0-9]*" min="0" step="0.5" title="Non-negative integral number"/>
+			<p id="lab_3">cm<sup>3</sup></p>
+		</div>
+		<div id="submitButton">提交</div>
+		<div id="refLine"></div>
+		<div id="refLine1"></div>
+		<div id="eyeBall"></div>
+		<div id="draggEyes"></div>
+		
+		
+	</div>
+	<div id="parentContainer">
+		
+		<div id="dragContainment"></div>
+		<div id="bottomContainment"></div>
+		<div id="scaleElem">
+			<div id="botDragger"></div>
+		</div>
+		<div id="rotationEnab">
+			<div id="rotHead" class="rotScale"></div>
+			<!-- <div id="rotFoot" class="rotScale"></div> -->
+		</div>
+		<div id="pxMonitor"></div>
+	</div>
+	
+	<div id="buttonsContainer">
+		<div id="turnOffCam" class="comControls arOff"></div>
+		<div id="recStop" class="comControls"></div>
+		<div id="togCam" class="comControls"></div>
+		<!-- <div id="mode_1" class="comControls virtualScale">Reading</div> -->
+		<div id="drag_rotate" class="dragNow comControls">Rotate</div>
+		<div id="reset_activity" class="comControls"></div>
+	</div>
+	<div id="bottomContainer">
+		<div id="infoBtn" class="comControls"></div>
+		<div id="zoomInBtn" class="comControls"></div>
+		<div id="zoomOutBtn" class="comControls"></div>
+		<div id="rotateBtn" class="comControls"></div>
+		<div id="ruleBtn" class="comControls">Rule</div>
+		<div id="measurementConversion" class="comControls">inch/feet</div>
+	</div>
+	
+	
+	
+	 <div id="blackScreen"></div>
+	  <div style="display:none;" class="modal" id="myModal" role="dialog">
+		
+		<div class="modal-dialog" id="mod-dialogs">
+		
+		  <div class="modal-content" id="modContent">
+			<div class="modal-body">
+			  <p>你的視線已和水位成一直線.</p>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>	
+	
+	
+	<div id="doeSupported" style="display: none;"></div>
+	<div id="doeSupported1" style="display: none;"></div>
+	
+	<div id="hardwareInfo">
+		<div id="centerBox">
+			<div id="headerArea">注意</div>
+			
+			<div id="line_2">為達至最佳體驗，建議使用以下系統配置：</div>
+			<table id="table" class="table table-condensed table-bordered">
+				<tbody>
+				  <tr>
+					<td>瀏覽器</td>
+					<td id="browserVersion">Edge 16+, Mozilla Firefox 59+, Chrome 67+, Safari 11.2+</td>
+				  </tr>
+				  <tr>
+					<td>操作系統</td>
+					<td id="osVersion">Windows 7, 8, 10; Mac 10.13; iPad Air 2 with iOS 11; Android 5.0.2</td>
+				  </tr>
+					<tr>
+					<td>RAM</td>
+					<td>4 GB+</td>
+				  </tr>
+				  <tr>
+					<td>頻寬</td>
+					<td>2 MBPS+</td>
+				  </tr>
+				  <tr>
+					<td>AR 模式</td>
+					<td>電腦需配備攝錄鏡頭</td>
+				  </tr>
+				</tbody>
+			  </table>	
+			<div id="launcher">下一步</div>
+		</div>
+	</div>
+	
+	<div id="infoBanner">
+		
+		<div id="info-content">
+			<div id="info-header">指示</div>
+			<div id="instruct-close">下一步</div>
+			<div id="info-text">Take the reading of the water level. To keep the upright position of the measuring cylinder, you may rotate the tablet to adjust its orientation. The camera will detect your eye level to the cylinder at the same time. Answer and submit to check if it is correct.</div>
+			<video id="videoPopUp" src="video/demo.mp4" controls></video>
+		</div>
+	</div>
+	
+	</div>
+	
+	<!-- <button id="sizeBut">Size</button> -->
+</body>
+
+</html>

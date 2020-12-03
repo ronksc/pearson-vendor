@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<connector><![CDATA[1]]></connector>
+		<name><![CDATA[Camera]]></name>
+		<slug><![CDATA[cam_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[2]]></connector>
+		<name><![CDATA[Drone]]></name>
+		<slug><![CDATA[drone_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[3]]></connector>
+		<name><![CDATA[Fujifilm X-T1]]></name>
+		<slug><![CDATA[fxt1_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[apsc_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[4]]></connector>
+		<name><![CDATA[Fujifilm X-T2]]></name>
+		<slug><![CDATA[fxt2_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[apsc_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[5]]></connector>
+		<name><![CDATA[Fujifilm X-T3]]></name>
+		<slug><![CDATA[fxt3_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[apsc_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[6]]></connector>
+		<name><![CDATA[Fujifilm X-H1]]></name>
+		<slug><![CDATA[fxht_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[apsc_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[7]]></connector>
+		<name><![CDATA[APSC]]></name>
+		<slug><![CDATA[apsc_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[cam_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[8]]></connector>
+		<name><![CDATA[Full Frame]]></name>
+		<slug><![CDATA[fullframe_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[cam_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[9]]></connector>
+		<name><![CDATA[Nikon D850]]></name>
+		<slug><![CDATA[nd850_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[fullframe_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[10]]></connector>
+		<name><![CDATA[Nikon D600]]></name>
+		<slug><![CDATA[nd600_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[fullframe_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[11]]></connector>
+		<name><![CDATA[Nikon D4s]]></name>
+		<slug><![CDATA[nd4s_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[fullframe_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[12]]></connector>
+		<name><![CDATA[DJI Mavic 2 Pro]]></name>
+		<slug><![CDATA[m2p_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[drone_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[13]]></connector>
+		<name><![CDATA[DJI Mavic 2 Zoom]]></name>
+		<slug><![CDATA[m2z_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[drone_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[14]]></connector>
+		<name><![CDATA[DJI Spark]]></name>
+		<slug><![CDATA[spark_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[drone_e]]></parentcategoryslug>
+	</node>
+	<node>
+		<connector><![CDATA[15]]></connector>
+		<name><![CDATA[DJI Air]]></name>
+		<slug><![CDATA[air_e]]></slug>
+		<description><![CDATA[]]></description>
+		<parentcategoryslug><![CDATA[drone_e]]></parentcategoryslug>
+	</node>
+</data>
