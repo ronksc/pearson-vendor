@@ -2574,9 +2574,7 @@ var Roots = {
 			  
 			  //console.log(closest_li);
 			  
-			if(typeof closest_li !== 'undefined') {
 			  closest_li.addClass('pos_right');
-			}
 		  }
 	  }
 	  
@@ -3958,6 +3956,28 @@ var Roots = {
 		
 		$('document').ready(function(){
 			checklist_filter_option();
+		});
+	}
+  },
+  search_results:{
+	init: function(){
+		function result_pagination(){
+			
+			$('#pagination-select').unbind('change');
+			$('#pagination-select').on('change', function(){			
+				//ajax_action_grid($(this).val());
+				//$("html, body").animate({ scrollTop: 0 });
+				var url = $(this).val(); // get selected value
+				if (url) { // require a URL
+					//console.log(url);
+					window.location = url; // redirect
+			  	}
+			  	return false;
+			});
+		}
+		
+		$('document').ready(function(){
+			result_pagination();
 		});
 	}
   }

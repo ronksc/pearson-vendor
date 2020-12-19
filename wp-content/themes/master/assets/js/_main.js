@@ -947,7 +947,11 @@ var Roots = {
 			});
 		}
 		
-		function get_all_resources_list(){
+		function initialAjaxLoad(){
+			ajax_action_list(1);
+		}
+		
+		function get_all_resources_list(){			
 			if($('.btn_gopage_next').length > 0){
 				$('.btn_gopage_next').unbind('click');	
 				$('.btn_gopage_next').on('click touchstart', function(){
@@ -997,6 +1001,201 @@ var Roots = {
 		}
 		
 		$('document').ready(function(){
+			initialAjaxLoad();
+			initAudioSetup();
+			get_all_resources_list();
+			createZip();
+		});
+	}
+  },
+  page_template_template_all_resources_list_ajax:{
+	init: function() {
+		function ajax_action_list(pageNum, current_filter){
+			$("html, body").animate({ scrollTop: 0 });
+			var ajaxurl = '/wp-admin/admin-ajax.php';
+			
+			var filter_1 = 0,
+				filter_2 = 0,
+				filter_3 = 0;
+			
+			if($('#filter_1').length > 0){
+				filter_1 = $('#filter_1').val();
+			}
+			
+			if($('#filter_2').length > 0){
+				if(parseInt(filter_dependence) === 1 && current_filter !== 1 || parseInt(filter_dependence) !== 1){
+					filter_2 = $('#filter_2').val();
+				}
+			}
+			
+			if($('#filter_3').length > 0){
+				filter_3 = $('#filter_3').val();
+			}
+			
+			$('.resource-container-inner').fadeOut(300, function(){
+				$('.loading-box').fadeIn();													 
+			});
+			$('.pagination').fadeOut();
+			
+			/* if(parseInt(filter_dependence) === 1 && current_filter === 1){
+				$('#filter_2_container').hide();	
+			} */
+			
+			
+			var result1;
+			var result2;
+			var result_filter;
+			$.when(
+				
+				$.ajax({
+					url: ajaxurl,
+					type: 'post',
+					data:{
+						/* action: 'get_resource_dependence_filter',
+						parent_filter: filter_1,`
+						dependence: filter_dependence,
+						filter_title: filter2_title */
+						
+						action: 'get_resource_dependence_filter',
+						parent_filter: filter_1,
+						dependence: filter_dependence,
+						filters: filter_1+','+filter_2+','+filter_3,
+						sessionid: ssid,
+						//resource_list_id_data: pageid,
+						pageID: pageID,
+						template: 'all_resource_list'
+					},
+					success: function( result ) {
+						result_filter = result;
+					},
+					error: function(MLHttpRequest, textStatus, errorThrown){
+						alert('Sorry, something went wrong. Please try again.');
+					}  
+				}),
+				   
+				$.ajax({
+				  url: ajaxurl,
+				  type: 'post',
+				  data: {
+					action: 'get_all_resources_list', 
+					page: pageNum,
+					//resource_listID: resource_listID, 
+					filters: filter_1+','+filter_2+','+filter_3
+				  },
+				  success: function( result ) {
+					result1 = result;
+				  },
+				  error: function(MLHttpRequest, textStatus, errorThrown){
+					alert('Sorry, something went wrong. Please try again.');
+				  }
+				}),
+				
+				$.ajax({
+				  url: ajaxurl,
+				  type: 'post',
+				  data: {
+					action: 'get_all_resource_pagination', 
+					page: pageNum,
+					//resource_listID: resource_listID, 
+					filters: filter_1+','+filter_2+','+filter_3
+				  },
+				  success: function( result ) {
+					result2 = result;
+				  },
+				  error: function(MLHttpRequest, textStatus, errorThrown){
+					alert('Sorry, something went wrong. Please try again.');
+				  }
+				})
+			).then(function(){
+				//update resource
+				$('.loading-box').fadeOut(300, function(){
+					$('.resource-container-inner').html(result1);
+					$('.resource-container-inner').fadeIn();
+					initMultipleDownload();
+					initAudioSetup();
+					createZip();
+					initEditButton();
+					
+					//update pagination
+					$('.pagination').html(result2);
+					$('.pagination').fadeIn();
+					
+					/* if(parseInt(filter_dependence) === 1 && current_filter === 1){
+						$('#filter_2_container').html(result_filter);
+						$('#filter_2_container').show();
+					} */
+					
+					$('#filter_select_container').html(result_filter);
+					$('#filter_select_container').show();
+					
+					get_all_resources_list();
+					
+					if(typeof pageNum !== 'undefined'){
+						currentPageNum = pageNum;
+					}else{
+						currentPageNum = 1;
+					}
+				});
+			});
+		}
+		
+		function initialAjaxLoad(){
+			console.log('initialAjaxLoad');
+			ajax_action_list(1);
+		}
+		
+		function get_all_resources_list(){			
+			if($('.btn_gopage_next').length > 0){
+				$('.btn_gopage_next').unbind('click');	
+				$('.btn_gopage_next').on('click touchstart', function(){
+					//console.log('currentPageNum: '+currentPageNum);
+					
+					var lastValue = $('#pagination-select option:last-child').val();
+					var newPageNum = 0;
+					
+					if(parseInt(currentPageNum) < lastValue){
+						newPageNum = parseInt(currentPageNum)+1;
+					}
+
+					
+					//console.log('newPageNum: '+newPageNum);
+					ajax_action_list(newPageNum);
+					$("html, body").animate({ scrollTop: 0 });
+				});
+			}
+			
+			if($('.btn_gopage_prev').length > 0){
+				$('.btn_gopage_prev').unbind('click');	
+				$('.btn_gopage_prev').on('click touchstart', function(){
+					currentPageNum = $('#pagination-select').val();
+					//console.log('currentPageNum: '+currentPageNum);
+					var newPageNum = 0;
+					
+					if(parseInt(currentPageNum) > 1){
+						newPageNum = parseInt(currentPageNum)-1;
+					}
+					
+					//console.log('newPageNum: '+newPageNum);
+					ajax_action_list(newPageNum);
+					$("html, body").animate({ scrollTop: 0 });
+				});
+			}
+			
+			$('.resource_filtering').unbind('change');
+			$('.resource_filtering').on('change', function(){
+				var current_filter = parseInt($(this).attr('data-filter'));
+				ajax_action_list(1, current_filter);
+			});
+			
+			$('#pagination-select').unbind('change');
+			$('#pagination-select').on('change', function(){			
+				ajax_action_list($(this).val());									   
+				$("html, body").animate({ scrollTop: 0 });
+			});
+		}
+		
+		$('document').ready(function(){
+			initialAjaxLoad();
 			initAudioSetup();
 			get_all_resources_list();
 			createZip();
@@ -1260,6 +1459,28 @@ var Roots = {
 		
 		$('document').ready(function(){
 			checklist_filter_option();
+		});
+	}
+  },
+  search_results:{
+	init: function(){
+		function result_pagination(){
+			
+			$('#pagination-select').unbind('change');
+			$('#pagination-select').on('change', function(){			
+				//ajax_action_grid($(this).val());
+				//$("html, body").animate({ scrollTop: 0 });
+				var url = $(this).val(); // get selected value
+				if (url) { // require a URL
+					//console.log(url);
+					window.location = url; // redirect
+			  	}
+			  	return false;
+			});
+		}
+		
+		$('document').ready(function(){
+			result_pagination();
 		});
 	}
   }

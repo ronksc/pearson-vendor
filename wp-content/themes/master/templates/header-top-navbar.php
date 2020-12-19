@@ -57,8 +57,17 @@ $lang_arr = icl_get_languages('skip_missing=1&orderby=id&order=desc');
 			  <a class="navbar-brand" href="<?php echo home_url(); ?>/"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/pearson-logo.svg" class="img-responsive"></a>
 			</div>
 			<div class="navbar-header-right hidden-xs hidden-sm visible-md visible-lg">
-				<div style="display: inline-block; margin-right:15px;">
-					<?php get_search_form(); ?>
+				<div class="navbar-header-search" style="">
+					<form role="search" method="get" class="search-form form-inline" action="<?php echo esc_url(home_url('/')); ?>">
+					  <label class="sr-only"><?php _e('Search for:', 'roots'); ?></label>
+					  <div class="input-group">
+						<span class="input-group-btn">
+						  <button type="submit" class="search-submit btn btn-default"></button>
+						</span>
+						<input type="search" value="<?php echo get_search_query(); ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>" required>
+					  </div>
+					</form>
+
 				</div>
 				<?php
 				if (has_nav_menu('corners-menu')) :
